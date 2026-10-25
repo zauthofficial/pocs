@@ -1,0 +1,15 @@
+{
+    "name": "apex/uvdesk-mailbox-upload-poc",
+    "description": "PoC harness: exercises the REAL uvdesk/core-framework FileSystem/UploadManagers/Localhost.php (pinned commit 3b31910, unmodified) exactly as Services/TicketService.php::saveThreadEmailAttachments() calls it, using the REAL php-mime-mail-parser library that mailbox-component/Services/MailboxService.php uses to parse inbound mail.",
+    "type": "project",
+    "require": {
+        "php": "^8.0",
+        "php-mime-mail-parser/php-mime-mail-parser": "^7.0.0",
+        "symfony/http-foundation": "^6.0",
+        "symfony/dependency-injection": "^6.0",
+        "symfony/mime": "^6.0"
+    },
+    "config": {
+        "allow-plugins": true
+    }
+}
